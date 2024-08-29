@@ -1,0 +1,145 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html {
+    background-color: white;
+}
+header {
+    display: flex;
+    justify-content: start;
+    height: 50px;
+    background-color: darkred;
+}
+body {
+    background-color: rgb(245, 245, 245);
+}
+
+img {
+    border-radius: 5px;
+    /* width: 980px;
+    padding: 0px; */
+}
+.btn {
+    color: rgb(223, 214, 214);
+    background-color: black;
+    margin: 67px;
+    margin-left: 2px;
+    border-radius: 13px;
+    width: 77px;
+    height: 35px;
+    align-content: center;
+    position: absolute;
+    left: 7px;
+}
+.container {
+    color: black;
+    background-color: black;
+    margin: 20px;
+    height: 0px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+
+}
+.form-control {
+    width: 15%;
+    padding: 7px;
+    font-size: 15px;
+    border-radius: 13px;
+    background-color: white;
+    color: black;
+    top: 53px;
+    position: relative;
+    margin: 2px;
+}
+.header {
+    padding: 7px;
+    width: 100%;
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+    background-color: darkred;
+    color: rgb(255, 255, 255);
+}
+.header h1 {
+    display: inline-block;
+    font-size: 60px;
+    margin-top: 10px;
+    margin-left: 13px;
+}
+.header nav {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: Impact,'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+}
+.header nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+    margin-top: 20px;
+}
+.nav-ul li a {
+    color: rgb(255, 255, 255);
+}
+.button {
+    display: inline-block;
+    background-color: darkred; /* Red color */
+    color: #ffffff; /* White text */
+    box-shadow: none;
+    border: none;
+    padding: 0;
+    margin: none;
+    font-size: 30px;
+
+
+}
+.hero {
+    height: 250px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-size: cover;
+    background-position: center;
+}
+.hero h3 {
+    display: flex;
+    justify-content: end;
+    margin-right: 20px;
+    color: white;
+    font-size: 30px
+}
+.box {
+    background-color: darkred;
+}
+.box p {
+    font-size: 20px;
+    font-family: Impact,'Arial Narrow Bold', sans-serif;
+    color: #ffffff;
+}
+.foodPhoto {
+    display: block;
+    justify-content: end;
+    align-items: end;
+    height: 200%;
+    margin-top: 70px;
+    margin-left: auto;
+    margin-right: 2%
+}
+.footer {
+    position: fixed; /* Fixed position to keep it at the bottom of the viewport */
+    left: 0;
+    bottom: 0;
+    background-color: transparent;
+    color: black;
+    text-align: center;
+    margin: 10px;
+    padding: 20px 0; /* Adjust padding as needed */
+    width: 200px; /* Set a fixed width for the footer */
+}
+footer h4, p {
+    font-size: 13px;
+}
+  
+  /* For mobile */
+  @media only screen and (max-width: 767px) {
+    /* Your mobile styles here */
+  }

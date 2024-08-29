@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuisine Compass</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="header">
+        <h1>Cuisine Compass</h1>
+        <nav>
+            <ul class="nav-ul">
+                <li><a href="#finder">Contact Us</a></li>
+                <li><button id="aboutButton" class="button">About</button></li>
+            </ul>
+        </nav>
+    </div>
+    <header>
+        <div class="hero">
+            <h3>Your Culinary Journey Begins</h3>
+            <img src="assets/images/header-photo-of-food.png" class="foodPhoto">
+        </div>
+    </header>
+
+    <section class="container" id="search-box">
+        <nav class="search-cont">
+            <div class="finder" id="searchHistory">
+                <form id="search-form" class="form-gp">
+                        <div class="side-form">
+                            <label for="search-term-input"></label>
+                            <!-- <input type="text" class="form-control" id="search-term-input" placeholder="Search for diner">  -->
+                            <div class="input-text-append">
+                        </div>
+                        <div>
+                            <label for="search-term-input"></label>
+                            <input type="text" class="form-control" id="search-term-location" placeholder="Enter City"> 
+                        </div>
+                        <div class="input-text-append">
+                            <button class="btn" type="submit" id="searchBtn">Search</button>
+                        </div>
+                    <div>
+                    </div>
+                </form>
+                <div id="previousSearches"></div>
+            </div>
+        </nav>
+    </section>
+    <footer class="footer">
+        <h4>Made with ❤️️ by Team Four</h4>
+        <p>
+            &copy; 2024 UTA Coding BootCamp.
+        </p>
+    </footer>
+
+    <script src="./assets/js/index.js"></script>
+
+    
+    <div id="aboutModal" class="modal">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+            <div class="box">
+                <h2 class="title is-2">About Cuisine Compass</h2>
+                <p>The Cuisine Compass is a web application that allows users to easily locate restaurants serving based on their location and can view restaurant details, and make informed dining decisions.</p>
+            </div>
+        </div>
+        <button class="modal-close is-large" aria-label="close"></button>
+    </div>
+</body>
+</html>

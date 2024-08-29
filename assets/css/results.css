@@ -1,0 +1,570 @@
+html {
+  line-height: 1.15;
+-webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  font-size: 16px;
+  color: #1a1a1a;
+  min-height: 100%;
+}
+
+h1, h2 {
+  margin: 0 0 0.5rem;
+  line-height: 1.25;
+}
+
+h1 {
+  font-size: 2.25rem;
+  color: white;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+p {
+  font-size: 1.1rem;
+  margin: 0 0 1rem;
+  line-height: 1.5;
+}
+
+ul, ol {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+label {
+  display: inline-block;
+}
+
+input, select, textarea, button {
+  margin: 0;
+}
+
+a:hover {
+  color: #065b83;
+  text-decoration: underline;
+}
+
+/* BACKGROUND UTILS */
+.bg-primary {
+  background-color: white !important;
+}
+.bg-light {
+  background-color: darkred !important;
+}
+
+.srch-btn {
+  float: left;
+  width:40%;
+  padding: 8px;
+  font-size: 17px;
+  border-radius: 13px;
+  background-color: black;
+  color: white;
+  top: 60px;
+  position: relative;
+}
+
+.d-resultform {
+  width: 100%;
+  padding: 8px;
+  font-size: 14px;
+  border-radius: 13px;
+  background-color: white;
+  color: black;
+  top: 55px;
+  position: relative;
+  margin: 0px;
+  display: flex;
+}
+
+.bxs-left-arrow-square {
+  float: right;
+  width: 40%;
+  padding: 8px;
+  font-size: 17px;
+  border-radius: 13px;
+  background-color: black;
+  color: white;
+  top: 46px;
+  position: relative;
+  justify-content: space-evenly;
+  display: flex;
+}
+  
+.btn {
+  text-align: center;
+  display: inline-block;
+  padding: 0.5rem 1.2rem;
+  margin: 0;
+  text-decoration: none;
+  font-size: 1rem;
+  border-radius: 0.3rem;
+  border: 1px solid transparent;
+  outline: none;
+  color: #1a1a1a;
+  background-color: #aeaeae;
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+.container {
+  width: 85%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container.container-fluid {
+  width: 92%;
+}
+
+/* FLEX CONTENT */
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.align-start {
+  align-items: flex-start;
+}
+
+.align-stretch {
+  align-items: stretch;
+}
+
+.align-content-start {
+  align-content: flex-start;
+}
+
+.align-content-stretch {
+  align-content: stretch;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+[class*='col-'] {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.col-auto {
+  flex-grow: 1;
+  flex-basis: 0;
+}
+
+.col-1 {
+  flex: 0 0 8.33333%;
+  max-width: 8.33333%;
+}
+
+.col-12 {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+
+/* media query */
+@media screen and (min-width: 768px) {
+  .col-md-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+  
+  .col-md-9 {
+    flex: 0 0 75%;
+    max-width: 75%;
+  }
+
+  .align-stretch-md {
+    align-items: stretch;
+  }
+   
+  .align-content-stretch-md {
+    align-content: stretch;
+  }
+}
+
+.restName {
+  margin-left: 10px;
+}
+
+.displayImage  {
+  height: 200px;
+  width: 200px;
+  margin-left: 10px
+}
+
+.resultDiv {
+  border: 2px solid black;
+  margin: 10px;
+  width: auto;
+  height: 300px;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.cuisineTag {
+  position: relative;
+  top: -170px;
+  left: 10px;
+  font-size: 20px;
+  margin-left: auto;
+  font-family:'Times New Roman', Times, serif;
+  background-color: darkred;
+  color: white;
+  border-radius: 5px;
+  padding: 2px 5px;
+  display: inline-flex;
+}
+
+.priceTag {
+  position: relative;
+  margin-left: auto;
+  top: -170px;
+  right: -20px;
+  font-size: 20px;
+  font-family:'Times New Roman', Times, serif;
+  background-color: darkred;
+  color: white;
+  border-radius: 5px;
+  padding: 2px 5px;
+  display: inline-flex;
+
+}
+
+.rating {
+  position: relative;
+  margin-left: auto;
+  top: -170px;
+  right: -30px;
+  font-size: 20px;
+  font-family:'Times New Roman', Times, serif;
+  background-color: darkred;
+  color: white;
+  border-radius: 5px;
+  padding: 2px 5px;
+  display:inline-flex;
+}
+
+.openStatus {
+  position: relative;
+  top: -170px;
+  right: -40px;
+  font-size: 20px;
+  font-family:'Times New Roman', Times, serif;
+  background-color: darkred;
+  color: white;
+  border-radius: 5px;
+  padding: 2px 5px;
+  display: inline-flex;
+}
+
+.reviewSnippet {
+  position: relative;
+  top: -170px;
+  left: 225px;
+  font-size: 20px;
+  font-family:'Times New Roman', Times, serif;
+  width: 70%;
+
+}
+
+.container {
+  width: 80%; /* Adjust the width of the container */
+  margin: 0 auto; /* Center the container horizontally */
+  padding: 20px; /* Add some padding */
+  background-color: #f0f0f0; /* Add a background color */
+}
+
+h1 {
+  font-size: 2em; /* Adjust font size */
+}
+
+@media screen and (max-width: 1060px) {
+.resultDiv {
+  height: auto; /* Change to auto height for smaller screens */
+}
+
+.displayImage  {
+  height: 200px;
+  width: 200px;
+  margin-left: 10px
+}
+
+.openStatus {
+  height: auto;
+  position: relative;
+  top: -120px;
+  left: -260px;
+}
+
+.reviewSnippet {
+  height: auto;
+  position: relative;
+  top: -20px;
+  left: 10px;
+}
+
+}
+
+@media screen and (max-width: 1007px) {
+.resultDiv {
+  height: auto; /* Change to auto height for smaller screens */
+}
+
+.displayImage  {
+  height: 200px;
+  width: 200px;
+  margin-left: 10px
+}
+
+.openStatus {
+  height: auto;
+  position: relative;
+  top: -170px;
+  left: 220px;
+}
+
+.reviewSnippet {
+  height: auto;
+  position: relative;
+  top: -20px;
+  left: 10px;
+}
+
+}
+
+@media screen and (max-width: 822px) {
+.resultDiv {
+  height: auto; /* Change to auto height for smaller screens */
+}
+
+.openStatus {
+  height: auto;
+  position: relative;
+  top: -170px;
+  left: 225px;
+}
+
+.reviewSnippet {
+  height: auto;
+  position: relative;
+  top: -60px;
+  left: 10px;
+}
+
+}
+
+@media screen and (max-width: 776px) {
+.resultDiv {
+  height: auto; /* Change to auto height for smaller screens */
+}
+
+.priceTag {
+  position: relative;
+  top: -120px;
+  right: 85px;
+}
+
+.rating {
+  top: -120px;
+  right: -224px;
+  display:inline-flex;
+}
+
+.openStatus {
+  position: relative;
+  top: -70px;
+  left: 120px;
+}
+
+.reviewSnippet {
+  position: relative;
+  top: -60px;
+  left: 10px;
+}
+
+}
+
+
+@media screen and (max-width: 768px) {
+.resultDiv {
+  height: auto; /* Change to auto height for smaller screens */
+}
+
+
+  .displayImage {
+    flex-direction: row;
+    height: auto;
+  }
+
+  .resultDiv {
+    flex-direction: row;
+    height: auto;
+    width: auto;
+  }
+
+  .cuisineTag {
+    flex-direction: row;
+    height: auto;
+    position: relative;
+    left: 10px;
+  
+  }
+
+  .priceTag {
+    flex-direction: row;
+    height: auto;
+    position: relative;
+    top: -120px;
+    left: -84px;
+  }
+
+  .rating {
+    height: auto;
+    position: relative;
+    margin: auto;
+    top: -120px;
+    left: 220px;
+  }
+
+  .openStatus {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: auto;
+    height: auto;
+    position: relative;
+    top: -70px;
+    left: 115px;
+  }
+
+  .reviewSnippet {
+    flex-direction: column;
+    margin: auto;
+    height: auto;
+    position: relative;
+    top: -70px;
+    left: 10px;
+  }
+
+  .srch-btn {
+    float: left;
+    width:40%;
+    padding: 8px;
+    font-size: 17px;
+    border-radius: 13px;
+    background-color: black;
+    color: white;
+    top: 10px;
+    position: relative;
+    /* margin: 0px; */
+  }
+
+  .bxs-left-arrow-square {
+    float: right;
+    width: 40%;
+    padding: 8px;
+    font-size: 17px;
+    border-radius: 13px;
+    background-color: black;
+    color: white;
+    top: -10px;
+    position: relative;
+    justify-content: space-evenly;
+    display: flex;
+  }
+
+  .d-resultform {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    border-radius: 13px;
+    background-color: white;
+    color: black;
+    top: 1px;
+    position: relative;
+    margin: 0px;
+    display: flex;
+  }
+
+
+}
+
+@media screen and (max-width: 390px) {
+.resultDiv {
+  height: auto; /* Change to auto height for smaller screens */
+}
+
+
+  .displayImage {
+    flex-direction: row;
+    height: auto;
+  }
+
+  .resultDiv {
+    flex-direction: row;
+    height: auto;
+    width: auto;
+  }
+
+  .cuisineTag {
+    flex-direction: row;
+    height: auto;
+    position: relative;
+    left: 20px;
+  
+  }
+
+  .priceTag {
+    flex-direction: row;
+    height: auto;
+    position: relative;
+    top: -170px;
+    left: 215px;
+  }
+
+  .rating {
+    height: auto;
+    position: relative;
+    margin: auto;
+    top: -120px;
+    left: 100px;
+  }
+
+  .openStatus {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: auto;
+    height: auto;
+    position: relative;
+    top: -70px;
+    left: 100px;
+  }
+}
+
+#map {
+  height: 500px; /* Adjust height as needed */
+  width: 25%; /* Adjust width as needed */
+   z-index: 3;
+    position: absolute;
+    padding: 0px;
+    border-width: px;
+    margin: 0px;
+    left: 0px;
+    top: 300px;
+    touch-action: pan-x pan-y;
+}
