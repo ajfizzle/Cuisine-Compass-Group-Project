@@ -10,7 +10,8 @@ Using HTML, CSS, and JavaScript, our team developed a website to help users find
 
 ## URLs
 
-https://github.com/ajfizzle/Cuisine-Compass
+https://ajfizzle.github.io/Cuisine-Compass-Group-Project/
+https://github.com/ajfizzle/Cuisine-Compass-Group-Project
 
 ## Authors
 
